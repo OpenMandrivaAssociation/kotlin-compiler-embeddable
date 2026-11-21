@@ -1,6 +1,6 @@
 Name:		kotlin-compiler-embeddable
 Version:	2.4.21
-Release:	1
+Release:	2
 Summary:	Kotlin compiler embeddable for the JVM
 Group:		Development/Java
 License:	Apache-2.0
@@ -34,8 +34,8 @@ BuildRequires:	mvn(org.jetbrains.kotlin:kotlin-reflect) = 2.4.21
 BuildRequires:	mvn(org.jetbrains.kotlin:kotlin-script-runtime) = 2.4.21
 BuildRequires:	mvn(org.jetbrains.kotlin:kotlin-build-tools-api) = 2.4.21
 BuildRequires:	mvn(org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm) = 1.10.2
-BuildRequires:	mvn(org.jetbrains.kotlinx:atomicfu-jvm) = 0.26.1
-BuildRequires:	mvn(org.jetbrains.kotlinx:kotlinx-serialization-core) = 1.11.0
+BuildRequires:	mvn(org.jetbrains.kotlinx:atomicfu-jvm) = 0.33.0
+BuildRequires:	mvn(org.jetbrains.kotlinx:kotlinx-serialization-core) = 1.13.0
 BuildRequires:	mvn(org.jetbrains:annotations) = 24.0.1
 BuildRequires:	mvn(com.google.guava:guava)
 BuildRequires:	mvn(com.google.code.gson:gson)
@@ -46,7 +46,7 @@ Requires:	mvn(org.jetbrains.kotlin:kotlin-stdlib) = 2.4.21
 Requires:	mvn(org.jetbrains.kotlin:kotlin-reflect) = 2.4.21
 Requires:	mvn(org.jetbrains.kotlin:kotlin-script-runtime) = 2.4.21
 Requires:	mvn(org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm) = 1.10.2
-Requires:	mvn(org.jetbrains.kotlinx:atomicfu-jvm) = 0.26.1
+Requires:	mvn(org.jetbrains.kotlinx:atomicfu-jvm) = 0.33.0
 Requires:	mvn(org.jetbrains.intellij.deps:trove4j)
 
 %description
@@ -141,7 +141,7 @@ cat > kotlin-compiler-embeddable.pom << END
     <dependency>
       <groupId>org.jetbrains.kotlinx</groupId>
       <artifactId>atomicfu-jvm</artifactId>
-      <version>0.26.1</version>
+      <version>0.33.0</version>
     </dependency>
     <dependency>
       <groupId>org.jetbrains.intellij.deps</groupId>
